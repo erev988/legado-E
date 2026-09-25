@@ -170,3 +170,7 @@ cn.hutool.core.util.**{*;}
     public <init>(android.content.Context, android.util.AttributeSet);
     public <init>(android.content.Context, android.util.AttributeSet, int);
 }
+
+# Ktor's optional IDE debugger detector references JDK-only management APIs.
+-dontwarn java.lang.management.ManagementFactory
+-dontwarn java.lang.management.RuntimeMXBean
